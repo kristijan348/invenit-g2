@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=VT323&display=swap'); 
+
+*{
+    margin: 0px;
+    
+    box-sizing: border-box;
+    font-family:"Rubik Mono One", ;
+}
+html{
+scroll-behavior: smooth;
+}
+ul {
+
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    font-family: "VT323e"    ;
+    height: 15px;
+}
+.meni{
+    font-family:"Chivo Mono" ;
+}
+
+:root {
+    --color-ljubicasta1:#54318C ;
+    --color-ljubicasta2:#A486D5;
+    --color-zuta1:#FFEB99;
+    --color-zuta2:#FFDE5C;
+    --color-zuta3:#FFCC00;
+
+}
+
+header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:var(--color-ljubicasta2) ;
+    z-index: 99;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+nav> ul> li> a{
+    text-decoration: none;
+    
+}
+.logoslika{
+    height: 50px;
+}
+.menu li {
+    margin-inline: 20px;
+}
+
+
+
+
+  
+
+  
+ 
