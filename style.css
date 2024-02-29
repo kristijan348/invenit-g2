@@ -43,6 +43,18 @@ header{
     right: 0;
     background-color:var(--color-ljubicasta2) ;
     z-index: 99;
+    background: rgb(2,0,36);
+
+font-weight: bold;
+}
+.header-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(95,9,121,0.99781162464986) 6%, rgba(39,4,70,0.7429096638655462) 14%, rgba(18,2,51,1) 31%, rgba(63,6,92,1) 42%, rgba(92,15,125,1) 100%, rgba(0,212,255,1) 100%);
 }
 
 nav ul{
@@ -51,6 +63,7 @@ nav ul{
     text-decoration: none;
     justify-content: space-around;
     text-decoration: none;
+
 }
 
 nav {
@@ -58,19 +71,86 @@ nav {
     align-items: center;
     padding: 5px;
     justify-content: space-between;
+    z-index: 20;
 }
 
 nav> ul> li> a{
     text-decoration: none;
-    
+ 
 }
+
+nav ul li a::after{
+    content:"";
+    display: block;
+    height: 4px;
+    width: 0;
+    background:var(--color-zuta3);
+    transition: all 0.8s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
 .logoslika{
     height: 50px;
+
 }
 .menu li {
     margin-inline: 20px;
 }
 
+.hero-img {
+    height: auto;
+    width: 350px;
+    padding: 30px 50px;
+
+}
+.hero-card {
+    margin: auto;
+    display: flex;
+    width: max-content;
+    height: max-content;
+    justify-content: space-between;
+    -webkit-box-shadow: 1px 11px 45px 4px rgba(166,108,166,1);
+    -moz-box-shadow: 1px 11px 45px 4px rgba(166,108,166,1);
+    box-shadow: 1px 11px 45px 4px rgba(166,108,166,1);
+    margin-top: 100px;
+    border-radius: 15px;
+}
+ .content-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+.content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #FFCC00;
+    padding-inline: 50px;
+    
+}
+
+.content-right p {
+    font-size: 20px;
+    font-style: oblique;
+    margin-top: 10px;
+}
+
+.content-right h2 {
+   width: 100%;
+}
+
+.glavna{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    background: white;
+    
+}
 
 
 
